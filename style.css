@@ -19,8 +19,30 @@ body {
 h1 {
   color: #FFFFFF;
   margin: 20px 0;
+  animation: coolAnimation 3s infinite;
 }
 
+ @keyframes coolAnimation {
+        0% {
+          opacity: 0%;
+          color: aquamarine;
+        }
+
+        50% {
+          opacity: 50%;
+          scale: 5;
+          line-height: 0.6;
+          color: blue;
+        }
+        70% {
+          margin-left: 400px;
+          color: aquamarine;
+        }
+        100% {
+          opacity: 0%;
+        }
+      }
+      
 h2 {
   color: #FFFFFF;
   margin: 20px 0;
